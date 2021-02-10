@@ -1,6 +1,6 @@
-import {Dimensions, Platform, PixelRatio} from 'react-native';
+import { Dimensions, Platform, PixelRatio } from "react-native";
 
-const {width: SCREEN_WIDTH, height: SCREEN_HEIGHT} = Dimensions.get('window');
+const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get("window");
 
 // based on iphone 5s's scale
 const scale = SCREEN_WIDTH / 350;
@@ -9,53 +9,21 @@ function normalizeFontSize(size) {
   return Math.round(size / PixelRatio.getFontScale());
 }
 const dimensions = {
-  fullHeight: Dimensions.get('window').height,
-  fullWidth: Dimensions.get('window').width,
+  fullHeight: Dimensions.get("window").height,
+  fullWidth: Dimensions.get("window").width,
 };
 
 const colors = {
-  primary: '#EE3A23',
-  lightPrimary: '#fde9e7',
-  secondary: '#660531',
-  tertiary: '#5b45a4',
-  buttonPrimary: '#F85032',
-  buttonSecondary: '#2196F3',
-  orange: '#F85A3E',
-  lightGrey: '#ACACAC',
-  darkGrey: '#616161',
-  borderGrey: '#9E9E9E',
-  white: '#ffffff',
-  offWhite: '#FAFAFA',
-  helpbackground: '#F8F8F8',
-  lightGreen: '#69c501',
-  green: '#4CAF50',
-  offWhite: 'rgba(255, 255, 255,0.5)',
-  offWhite_03: 'rgba(255, 255, 255,0.3)',
-  placeholderLight: '#acacac',
-  placeholderDark: '#282828',
-  black: '#212121',
-  pureBlack: '#000000',
-  mediumGray: '#606060',
-  lightBlack: '#424242',
-  placeholder: '#787878',
-  inactive: '#BDBDBD',
-  answerText: '#999999',
-  error: '#ff0000',
-  yellow: '#FCB614',
-  pureYellow: '#FDD835',
-  cardbg: '#ecebeb',
-  progressInactive: '#E6E6E6',
-  background: '#F5F5F5',
-  divider: '#757575',
-  loginCardBg: '#FFFBEE',
-  referCardBg: '#EBEBEB',
-  servicesCardBg: '#FFF3CF',
-  unregisterPlaceBg: '#FFF9E8',
-  descText: '#6A6A6A',
-  dateTime: '#7E7E7E',
-  offerInsc: '#707070',
-  termsText: '#5A5A5A',
-  chipBg: '#212121',
+  primary: "#EE3A23",
+  buttonPrimary: "#F85032",
+  buttonSecondary: "#2196F3",
+  lightGrey: "#ACACAC",
+  darkGrey: "#616161",
+  white: "#ffffff",
+  black: "#212121",
+  placeholder: "#787878",
+  cardbg: "#ecebeb",
+  background: "#F5F5F5",
 };
 
 const padding = {
@@ -190,54 +158,34 @@ const size = {
 };
 
 const percentage = {
-  p5: '5%',
-  p10: '10%',
-  p15: '15%',
-  p17: '17%',
-  p20: '20%',
-  p25: '25%',
-  p30: '30%',
-  p35: '35%',
-  p40: '40%',
-  p45: '45%',
-  p48: '48%',
-  p50: '50%',
-  p60: '60%',
-  p70: '70%',
-  p75: '75%',
-  p80: '80%',
-  p85: '85%',
-  p90: '90%',
-  p95: '95%',
-  p100: '100%',
+  p5: "5%",
+  p10: "10%",
+  p15: "15%",
+  p17: "17%",
+  p20: "20%",
+  p25: "25%",
+  p30: "30%",
+  p35: "35%",
+  p40: "40%",
+  p45: "45%",
+  p48: "48%",
+  p50: "50%",
+  p60: "60%",
+  p70: "70%",
+  p75: "75%",
+  p80: "80%",
+  p85: "85%",
+  p90: "90%",
+  p95: "95%",
+  p100: "100%",
 };
 
 const fontFamily = {
-  primary: Platform.OS === 'android' ? 'Roboto' : 'Roboto',
-  primaryBold: Platform.OS === 'android' ? 'Roboto-Bold' : 'Roboto-Bold',
-  primaryMedium: Platform.OS === 'android' ? 'Roboto-Medium' : 'Roboto-Medium',
-  primaryLight: Platform.OS === 'android' ? 'Roboto-Light' : 'Roboto-Light',
-  primaryThin: Platform.OS === 'android' ? 'Roboto-Thin' : 'Roboto-Thin',
-  secondary:
-    Platform.OS === 'android'
-      ? 'HelveticaNeueLTStd-Lt'
-      : 'HelveticaNeueLTStd-Lt',
-  secondaryThin:
-    Platform.OS === 'android'
-      ? 'HelveticaNeueLTStd-Th'
-      : 'HelveticaNeueLTStd-Th',
-  secondaryMedium:
-    Platform.OS === 'android'
-      ? 'HelveticaNeueLTStd-Md'
-      : 'HelveticaNeueLTStd-Md',
-  secondaryHeavy:
-    Platform.OS === 'android'
-      ? 'HelveticaNeueLTStd-Hv'
-      : 'HelveticaNeueLTStd-Hv',
-  secondaryBold:
-    Platform.OS === 'android'
-      ? 'HelveticaNeueLTStd-Bd'
-      : 'HelveticaNeueLTStd-Bd',
+  primary: Platform.OS === "android" ? "Roboto" : "Roboto",
+  primaryBold: Platform.OS === "android" ? "Roboto-Bold" : "Roboto-Bold",
+  primaryMedium: Platform.OS === "android" ? "Roboto-Medium" : "Roboto-Medium",
+  primaryLight: Platform.OS === "android" ? "Roboto-Light" : "Roboto-Light",
+  primaryThin: Platform.OS === "android" ? "Roboto-Thin" : "Roboto-Thin",
 };
 
 export default {
